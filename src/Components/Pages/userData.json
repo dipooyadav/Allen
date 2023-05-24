@@ -1,0 +1,97 @@
+{
+    "suppliers": [
+      {
+        "name": "Navin",
+        "gstNo": "GST123456789",
+        "pincode": "123456",
+        "address": "123 Street, ABC City",
+        "city": "ABC City",
+        "state": "XYZ State",
+        "transporterName": "Transporter A",
+        "courierName": "Courier A",
+        "businessGroup": "Group A"
+      },
+      {
+        "name": "Harsh",
+        "gstNo": "GST987654321",
+        "pincode": "654321",
+        "address": "456 Street, XYZ City",
+        "city": "XYZ City",
+        "state": "ABC State",
+        "transporterName": "Transporter B",
+        "courierName": "Courier B",
+        "businessGroup": "Group B"
+      },
+      {
+        "name": "Naveen",
+        "gstNo": "GST123456789",
+        "pincode": "123456",
+        "address": "123 Street, ABC City",
+        "city": "ABC City",
+        "state": "XYZ State",
+        "transporterName": "Transporter A",
+        "courierName": "Courier A",
+        "businessGroup": "Group A"
+      } , {
+        "name": "Himanshu",
+        "gstNo": "GST123456789",
+        "pincode": "123456",
+        "address": "123 Street, ABC City",
+        "city": "ABC City",
+        "state": "XYZ State",
+        "transporterName": "Transporter A",
+        "courierName": "Courier A",
+        "businessGroup": "Group A"
+      }
+    ],
+    "agents": [
+      {
+        "name": "Ankit",
+        "gstNo": "AGST001",
+        "apincode": "123456",
+        "acity": "City 1",
+        "astate": "State 1"
+      },
+      {
+        "name": "Aniket",
+        "gstNo": "AGST002",
+        "apincode": "789012",
+        "acity": "City 2",
+        "astate": "State 2"
+      },
+      {
+        "name": "mayank",
+        "gstNo": "AGST003",
+        "apincode": "345678",
+        "acity": "City 3",
+        "astate": "State 3"
+      }
+    ],
+    "locations": [
+      {
+        "location": "jaipur",
+        "bgstno": "GST-001",
+        "bstate": "State 1",
+        "bcity": "City 1",
+        "baddress": "Address 1",
+        "bpincode": "12345"
+      },
+      {
+        "location": "makrana",
+        "bgstno": "GST-002",
+        "bstate": "State 2",
+        "bcity": "City 2",
+        "baddress": "Address 2",
+        "bpincode": "67890"
+      },
+      {
+        "location": "kota",
+        "bgstno": "GST-003",
+        "bstate": "State 3",
+        "bcity": "City 3",
+        "baddress": "Address 3",
+        "bpincode": "45678"
+      }
+    ]
+  }
+  

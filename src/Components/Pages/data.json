@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "clientname": "Client A",
+    "systemorderno": "SYS001",
+    "partyorderno": "PARTY001",
+    "rate": 10,
+    "Orderpono": "PO001",
+    "Orderinvno": "INV001",
+    "date": "2023-01-01",
+    "suppliername":"Navin"
+  },
+  {
+    "id": 2,
+    "clientname": "Client B",
+    "systemorderno": "SYS002",
+    "partyorderno": "PARTY002",
+    "rate": 15,
+    "Orderpono": "PO002",
+    "Orderinvno": "INV002",
+    "date": "2023-01-03",
+    "suppliername":"Navin"
+  },
+  {
+    "id": 3,
+    "clientname": "Client C",
+    "systemorderno": "SYS003",
+    "partyorderno": "PARTY003",
+    "rate": 20,
+    "Orderpono": "PO003",
+    "Orderinvno": "INV003",
+    "date": "2023-01-05",
+    "suppliername":"Mayank"
+  }
+]
