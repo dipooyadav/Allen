@@ -67,7 +67,7 @@ function ItemDetailStep({cartItems, setCartItems}) {
     <div>
     
     <Button variant="contained" onClick={handleClickOpen} justifyContent="flex-end">
-    Add Item
+    Add Items
   </Button>
   <BootstrapDialog
     onClose={handleClose}
