@@ -1,21 +1,31 @@
 import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import ScrollToTop from "react-scroll-to-top";
 
 const ProductView = ({product, onClose, cartItems, setCartItems  }) => {
   const [quantity, setQuantity] = useState(0);
+  const [imageNum, setImageNum] = useState(0);
 
   const incrementQuantity = () => {
     setQuantity(quantity + 1);
   };
 
   const decrementQuantity = () => {
-    if (quantity > 1) {
+    if (quantity > 0) {
       setQuantity(quantity - 1);
     }
   };
-
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+  const handleImageClick = ()=>{
+    setImageNum(getRandomInt(product.images.length));
+  }
   
   const addItem = () => {
     if (quantity === 0) {
@@ -43,32 +53,45 @@ const ProductView = ({product, onClose, cartItems, setCartItems  }) => {
         setCartItems(prevCartItems => [...prevCartItems, newItem]);
       }
     }
-
+    onClose();
     console.log('Cart Items:', cartItems);
   };
+  const closeButtonLabel = quantity === 0 ? 'Close' : 'Save Item';
 
   return (
     <div>
-          <img className="" src={product.images[0]} alt={product.title} />
-          <Typography variant="h5">{product.title}</Typography>
-          <Typography variant="body1">{product.description}</Typography>
-          <Typography>Rating: {product.rating}</Typography>
-          <Typography>Price: ${product.price}</Typography>
-          <div>
-            <Button variant="outlined" onClick={decrementQuantity}>
-              -
-            </Button>
-            <Typography variant="body1">{quantity}</Typography>
-            <Button variant="outlined" onClick={incrementQuantity}>
-              +
-            </Button>
-          </div>
-          <Button variant="contained" onClick={addItem}>
-            Add to Cart
-          </Button>
-          <Button variant="contained" onClick={onClose}>
-            Close
-          </Button>
+          <Card sx={{maxWidth: '30%', mb:4, ml: 2 }}>
+            <CardMedia
+              sx={{ height: 140, paddingTop: '56.25%'}}
+              image={product.images[imageNum]}
+              title={product.title}
+              onClick = {handleImageClick}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+              {product.title}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+              {product.description}
+              </Typography>
+              <Typography>Rating: {product.rating}</Typography>
+              <Typography>Price: ${product.price}</Typography>
+            </CardContent>
+            <CardActions  sx={{maxWidth: '100%'}}>
+              <Button size="small" onClick={decrementQuantity}>-</Button>
+              <Typography variant="body1">{quantity}</Typography>
+              <Button size="small" onClick={incrementQuantity}>+</Button>
+              <div>
+                <Button variant="contained" onClick={addItem}>
+                  {closeButtonLabel}
+                </Button>
+              </div>
+              <div>
+                <Typography variant="body1">Total: ${product.price*quantity}</Typography>
+              </div>
+            </CardActions>
+          </Card> 
+          <ScrollToTop smooth />
         </div>
   );
 };

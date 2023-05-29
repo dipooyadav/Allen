@@ -15,6 +15,9 @@ const initialValues = {
   email: '',firstName: '',
   lastName: '',
   email: '',
+  Name: '',
+  city: '',
+  email: '',
 };
 
 const Registration = () => {
