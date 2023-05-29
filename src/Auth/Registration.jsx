@@ -13,6 +13,9 @@ const initialValues = {
   firstName: '',
   lastName: '',
   email: '',
+  Name: '',
+  city: '',
+  email: '',
 };
 
 const Registration = () => {
