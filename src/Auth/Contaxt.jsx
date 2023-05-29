@@ -8,6 +8,9 @@ const validationSchema = Yup.object({
   firstName: Yup.string().required('First name is required'),
   selectvalue: Yup.string().required('selectvalue name is required'),
   email: Yup.string().email('Invalid email address').required('Email is required'),
+  firstName: Yup.string().required('First name is required'),
+  selectvalue: Yup.string().required('selectvalue name is required'),
+  email: Yup.string().email('Invalid email address').required('Email is required'),
 });
  
 const initialValues = {
@@ -28,6 +31,7 @@ const mystyle = {
       padding: "30px 30px  30px  30px",
       width: "100%",
     },
+    
     input: {
       marginBottom: '20px',
     },
