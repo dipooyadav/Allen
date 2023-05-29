@@ -16,11 +16,6 @@ const initialValues = {
   email: '',
 };
 
-
-
-
-
-
 const mystyle = {
     container: {
       // display: 'flex',
