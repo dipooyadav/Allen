@@ -12,6 +12,8 @@ const validationSchema = Yup.object({
 const initialValues = {
   firstName: '',
   lastName: '',
+  email: '',firstName: '',
+  lastName: '',
   email: '',
 };
 
