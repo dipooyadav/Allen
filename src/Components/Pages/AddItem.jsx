@@ -62,12 +62,7 @@ export default function AddItem({cartItems, setCartItems}) {
       name={item.title}
       url={item.thumbnail}
       altImg={item.images[0]}
-      price={item.price}
-      description={item.description}
-      rating={item.rating}
       onClick={() => setSelectedProduct(item)}
-      cartItems={cartItems}
-      setCartItems={setCartItems}
     />
   ));
   if (isLoading) {
