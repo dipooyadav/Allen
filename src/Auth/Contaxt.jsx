@@ -20,9 +20,9 @@ const mystyle = {
     container: {
       // display: 'flex',
       display :'flex',
-      flexDirection: 'column',
-
-      alignItems: 'left',
+      flexDirection: 'column', 
+      
+      alignItems: 'center',
       borderRadius: "9px",
       boxShadow: "1px 34px 5px rgba(0, 0, 0, 0.25)",
       padding: "30px 30px  30px  30px",
