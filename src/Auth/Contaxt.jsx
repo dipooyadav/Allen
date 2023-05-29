@@ -11,7 +11,7 @@ const validationSchema = Yup.object({
 });
  
 const initialValues = {
-  firstName: '',
+Name: '',
   selectvalue: '',
   email: '',
 };
