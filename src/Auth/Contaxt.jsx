@@ -18,7 +18,8 @@ const initialValues = {
 
 const mystyle = {
     container: {
-      display: 'flex',
+      // display: 'flex',
+      display :'flex',
       flexDirection: 'column',
       alignItems: 'center',
       borderRadius: "8px",
